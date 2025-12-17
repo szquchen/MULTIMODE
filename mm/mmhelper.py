@@ -172,7 +172,9 @@ class MMHelper():
         self.NMASS = self.NMASS_entry.get()
         self.COORD = self.COORD_text.get("1.0", "end-1c")
         self.ICOUPL = int(self.ICOUPL_entry.get())
-        self.ICOUPC = self.ICOUPL-1
+        self.ICOUPC = self.ICOUPL
+        if self.ICOUPC > 2:
+            self.ICOUPC = self.ICOUPC - 1
         self.NMAX = int(self.NMAX_entry.get())
         if self.NMAX > 0:
             self.NMAX = -self.NMAX
