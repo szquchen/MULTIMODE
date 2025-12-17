@@ -134,9 +134,9 @@ class MMHelper():
 
         self.TITLE_entry = self.longframe('Name of project: ', "H2CO_example", ['Info',
             'The project name used inside `fort.1` file, not the filename.'])
-        self.NATOM_entry = self.longframe('Number of atoms: ', 4)
+        self.NATOM_entry = self.longframe('Number of atoms: ', 4, ['Info', 'For non-linear molecules ONLY'])
         self.SYMB_entry = self.longframe('Nuclear Symbols: ', 'C O H H', ['Info',
-            'Tips: \n1. Separate with spaces.\n2. Order should be consistent with your potential'])
+            '1. Separate with spaces.\n2. Order should be consistent with your potential'])
         self.NMASS_entry = self.longframe('Nuclear Masses: ', self.NMASS, ['Info',
             'Mass of carbon is 12.0'])
 
@@ -147,19 +147,21 @@ class MMHelper():
         text_frame.pack()
         self.COORD_text = Text(text_frame, height=5, width=40)
         self.COORD_text.pack(side=TOP)
-        self.COORD_text.insert(END, "   0.00000000   0.00000000  -1.14627040\n   0.00000000   0.00000000   1.14354081\n   1.76538873   0.00000000  -2.25018868\n  -1.76538873   0.00000000  -2.25018868")
+        self.COORD_text.insert(END,
+            "   0.00000000   0.00000000  -1.14627040\n   0.00000000   0.00000000   1.14354081\n   1.76538873   0.00000000  -2.25018868\n  -1.76538873   0.00000000  -2.25018868")
 
         Label(root, text="2. VSCF/VCI configurations", bg="red", fg="white",font=("Helvetica", 16)).pack()
 
-        self.ICOUPL_entry = self.shortframe('n-mode representation (ICOUPL): ', 3, ['Info', "n-mode representation of the potential\nCannot exceed the number of normal modes\nTypically 3 or 4"])
+        self.ICOUPL_entry = self.shortframe('n-mode representation (ICOUPL): ', 3, ['Info',
+            'n-mode representation of the potential\nCannot exceed the number of normal modes\nTypically 3 or 4'])
         self.NMAX_entry = self.shortframe('Mode-coupling in VCI (|NMAX|): ', 3, ['Info',
-            'The number of modes allowed to be excited simultaneously in VCI'])
+            'The number of modes allowed to be excited simultaneously in VCI basis'])
         self.MAXSUM_entry = self.shortframe('MAXSUM', 8, ['Info',
             'The max sum of excitation in VCI basis'])
         self.MAXBAS_entry = self.shortframe('MAXBAS', 8, ['Info',
-            'The max basis function for a single mode'])
+            'The max basis function for a single mode\nAlso the max allowed quanta of excitation for this mode in VCI'])
         self.NROTTR_entry = self.shortframe('NROTTR', 0, ['Info',
-            "0: Use all normal modes\n<-1: Reduced-dimensional calculations using NMODE=3*NATOM-6+NROTTR highest-freq modes"])
+            "=0: Use all normal modes\n<-1: Reduced-dimensional calculations using NMODE=3*NATOM-6+NROTTR highest-freq modes"])
         save = Button(root,text='Generate `fort.1`')
         save.pack()
         save.bind('<Button-1>', lambda event: self.update(event))
