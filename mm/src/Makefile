@@ -1,6 +1,9 @@
 FC := gfortran
 FFLAGS := -fdefault-real-8 -fdefault-double-8 -fallow-argument-mismatch -O
 
+#FC := ifx
+#FFLAGS := -r8 -O
+
 OBJ := \
  h2co_pes.o\
  blas.vscf.3.4.o\
