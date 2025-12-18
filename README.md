@@ -85,10 +85,10 @@ The original version was created by Stuart Carter, but the public user-friendly 
 ### Theory
 * Joel M. Bowman
 * Stuart Carter
-* TBD
 
 ### MM orginial package and documentation
 * Stuart Carter
 
 ### User-friendly Realization
-* TBD
+* Kee (Qingfeng) Wang
+* Chen Qu

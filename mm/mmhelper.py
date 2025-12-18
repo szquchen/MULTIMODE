@@ -309,7 +309,7 @@ class MMHelper():
         f.write('  ' + ('  ' + str(p[4]))*self.NMODE + '\n')
         f.write('C**NCONT NVAL1 NVAL2 (DATA IGNORED IF NMAX.GE.0 OR ISCFCI.LE.0) \n')
         f.write('   {:^5d} {:^5d} {:^5d} \n'.format(*p[5]))
-        f.write('C**ICONT JCONT (DATA IGNORED IF NMAX.GE.0 OR ISCFCI.LE.0) \n')
+        f.write('C**ICONT JCONT NCOUPL NCOUPC (DATA IGNORED IF NMAX.GE.0 OR ISCFCI.LE.0) \n')
         f.write('   {:<5d} {:<30s} \n'.format(*p[6]))  # Here JCONT used string
         f.write('C**MAXSUM (DATA IGNORED IF NMAX.GE.0 OR ISCFCI.LE.0) \n')
         if NMAX >= 0 or ISCFCI <= 0:
