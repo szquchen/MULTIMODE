@@ -17,7 +17,7 @@ The source codes are in `mm/src`. A sample potential energy surface for H<sub>2<
 * Wait for program to end and get the result. It will take <1 min to run the H<sub>2</sub>CO example, but may take substantially longer with larger molecules.
 
 <p align="center">
-    <img src="https://github.com/szquchen/MULTIMODE/blob/main/mm/mmhelper.png" alt="MM Helper" width="300" height="500">
+    <img src="https://github.com/szquchen/MULTIMODE/blob/main/mm/mmhelper.png" alt="MM Helper" width="400" height="550">
 </p>
 
 ## TO-DO-LIST
