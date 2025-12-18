@@ -16,7 +16,7 @@ The source codes are in `mm/src`. A sample potential energy surface for H<sub>2<
 * Copy the executable `mm.x` to the same folder of the input file, and execute `./mm.x fort.1 fort.2`, where `fort.2` is the name of the output file.
 * Wait for program to end and get the result. It will take <1 min to run the H2CO example, but may take substantially longer with larger molecules.
 
-![Image of MM's little helper](https://github.com/Kee-Wang/MULTIMODE/blob/master/mmhelper/mm_helper_screen_shot.png)
+<img src="https://github.com/Kee-Wang/MULTIMODE/blob/master/mmhelper/mm_helper_screen_shot.png" alt="MM Helper" width="300" height="200">
 
 ## TO-DO-LIST
 ### Essential
