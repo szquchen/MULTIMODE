@@ -13,7 +13,7 @@ The source codes are in `mm/src`. A sample potential energy surface for H<sub>2<
 
 * Go to `mm/src` and compile the program using the Makefile. To link another potential, use `user.h2co.f` as a template and modify subroutines `USERIN` and `GETPOT`
 * Use the MM Helper GUI, `mm/mmhelper.py`, to generate the input file `fort.1`. Below is a screen shot of the GUI. Two sample inputs are provided in `examples`, one uses all the normal modes, and the other uses a subset of normal modes in a reduced-dimensional calculation. Users may also consult `notes/Quick_Start_Guide.pdf` to further modify the input file
-* Copy the executable `mm.x` to the same folder of the input file, and execute `./mm.x fort.1 fort.2`, where `fort.2` is the name of the output file.
+* Copy the executable `mm.x` and the input file `fort.1` to directory `mm`, and execute `./mm.x fort.1 fort.2`, where `fort.2` is the name of the output file.
 * Wait for program to end and get the result. It will take <1 min to run the H<sub>2</sub>CO example, but may take substantially longer with larger molecules.
 
 <p align="center">
