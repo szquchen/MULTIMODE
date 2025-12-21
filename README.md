@@ -6,6 +6,7 @@ MULTIMODE is a general code that obtains the ro-vibrational eigenvalues and eige
 
 ## Requirements
 * The users need to supply their own potential energy surface, written in Fortran (Or machine-learned potentials that make use of Atomic Simulation Environment, using an interface to be released in the near future)
+* The equilibrium structure of the molecule (must be a minimum, optimized with the potential energy surface)
 * A Fortran compiler. The version on this site has been tested with Intel and GNU Fortran compiler.
 
 ## A Quick Usage Guide -- Command Line version
