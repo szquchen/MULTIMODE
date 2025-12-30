@@ -4,13 +4,13 @@ C**MEMO
 C***********************************************************
 C***********************************************************
 C**16 GB
-C      PARAMETER(MAXSIZ=2000000000,MSEG=200)
+      PARAMETER(MAXSIZ=2000000000,MSEG=200)
 C**8 GB
 C      PARAMETER(MAXSIZ=1000000000,MSEG=200)
 C**4 GB
 C      PARAMETER(MAXSIZ=500000000,MSEG=200)
 C**2 GB
-      PARAMETER(MAXSIZ=260000000,MSEG=200)
+C      PARAMETER(MAXSIZ=260000000,MSEG=200)
       IMPLICIT REAL*8 (A-H,O-Z)
  
       character*4 tpdn

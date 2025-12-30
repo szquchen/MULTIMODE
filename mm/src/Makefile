@@ -1,8 +1,8 @@
 FC := gfortran
-FFLAGS := -fdefault-real-8 -fdefault-double-8 -fallow-argument-mismatch -O
+FFLAGS := -fdefault-real-8 -fdefault-double-8 -fallow-argument-mismatch -mcmodel=large -O
 
 #FC := ifx
-#FFLAGS := -r8 -O
+#FFLAGS := -mcmodel=large -r8 -O
 
 OBJ := \
  h2co_pes.o\
