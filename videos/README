@@ -1,1 +1,7 @@
 These are tutorial videos for MULTIMODE
+
+01 MM Install: About how to compile and execute the program with an example inputfile and a H2CO potential
+
+02 MM Userin.f: About how the users can supply their own potential energy surfacefor MULTIMODE
+
+03 MM GUI: Introducing a GUI that helps generate the input file for MM with minimal adjustable parameters. Users can further modify the input by consulting notes/Quick_Start_Guide.pdf.
