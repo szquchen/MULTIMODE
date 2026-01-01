@@ -42,3 +42,15 @@ The source codes are in `mm/src`. A sample potential energy surface for H<sub>2<
 ### User-friendly Realization
 * Kee (Qingfeng) Wang (https://github.com/Kee-Wang)
 * Chen Qu
+### How to cite
+S. Carter, S. J. Culik, J. M. Bowman; Vibrational self-consistent field method for many-mode systems: A new approach and application to the vibrations of CO adsorbed on Cu(100). J. Chem. Phys.;107 (24): 10458–10469 (1997) https://doi.org/10.1063/1.474210
+
+S. Carter, J. Bowman, N. Handy, Extensions and tests of “multimode”: a code to obtain accurate vibration/rotation energies of many-mode molecules. Theor Chem Acc 100, 191–198 (1998). https://doi.org/10.1007/s002140050379
+
+J. M. Bowman, S.Carter, X. Huang, MULTIMODE: A code to calculate rovibrational energies of polyatomic molecules. International Reviews in Physical Chemistry, 22(3), 533–549 (2003). https://doi.org/10.1080/0144235031000124163
+MULTIMODE, The n-Mode Representation of the Potential and Illustrations to IR Spectra of Glycine and Two Protonated Water Clusters
+
+Q. Yu, C. Qu, P. L. Houston, R. Conte, A. Nandi, and Joel M. Bowman, Vibrational Dynamics of Molecules, ed. J.M. Bowman, World Scientific Press, 2022, 296-339
+
+
+  
