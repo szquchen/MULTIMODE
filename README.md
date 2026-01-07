@@ -12,6 +12,7 @@ MULTIMODE is a general code that obtains the ro-vibrational eigenvalues and eige
 ## A Quick Usage Guide -- Command Line version
 The source codes are in `mm/src`. A sample potential energy surface for H<sub>2</sub>CO (`h2co_pes.f90` and `user.h2co.f`) are provided.
 
+* MULTIMODE uses a variable MAXSIZ (in `mm/src/memo.vscf.5.1.3.f`) to control the maximum RAM that can be used in the calculation. The default is about 16 GB and usually is sufficient. You can increase this number when necessary.
 * Go to `mm/src` and compile the program using the Makefile. To link another potential, use `user.h2co.f` as a template and modify subroutines `USERIN` and `GETPOT`
 * Use the MM Helper GUI, `mm/mmhelper.py`, to generate the input file `fort.1`. Below is a screen shot of the GUI. Two sample inputs are provided in `examples`, one uses all the normal modes, and the other uses a subset of normal modes in a reduced-dimensional calculation. Users may also consult `notes/Quick_Start_Guide.pdf` to further modify the input file
 * Copy the executable `mm.x` and the input file `fort.1` to directory `mm`, and execute `./mm.x fort.1 fort.2`, where `fort.2` is the name of the output file.
